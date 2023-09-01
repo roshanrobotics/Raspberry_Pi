@@ -1,0 +1,61 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'onoff' ]
+2 info using npm@1.4.21
+3 info using node@v8.11.1
+4 verbose cache add [ 'onoff', null ]
+5 verbose cache add name=undefined spec="onoff" args=["onoff",null]
+6 verbose parsed url Url {
+6 verbose parsed url   protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'onoff',
+6 verbose parsed url   path: 'onoff',
+6 verbose parsed url   href: 'onoff' }
+7 silly lockFile 1e5d8f47-onoff onoff
+8 verbose lock onoff /root/.npm/1e5d8f47-onoff.lock
+9 silly lockFile 1e5d8f47-onoff onoff
+10 silly lockFile 1e5d8f47-onoff onoff
+11 verbose addNamed [ 'onoff', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 0e81c0d2-onoff onoff@
+14 verbose lock onoff@ /root/.npm/0e81c0d2-onoff.lock
+15 silly addNameRange { name: 'onoff', range: '*', hasData: false }
+16 verbose request where is /onoff
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 26bba9ee12528260
+19 verbose url raw /onoff
+20 verbose url resolving [ 'https://registry.npmjs.org/', './onoff' ]
+21 verbose url resolved https://registry.npmjs.org/onoff
+22 verbose request where is https://registry.npmjs.org/onoff
+23 info trying registry request attempt 1 at 12:04:02 AM
+24 http GET https://registry.npmjs.org/onoff
+25 info retry will retry, error on last attempt: Error: connect EHOSTUNREACH 104.16.25.35:443
+26 info trying registry request attempt 2 at 12:04:17 AM
+27 http GET https://registry.npmjs.org/onoff
+28 info retry will retry, error on last attempt: Error: connect EHOSTUNREACH 104.16.21.35:443
+29 info trying registry request attempt 3 at 12:05:20 AM
+30 http GET https://registry.npmjs.org/onoff
+31 silly lockFile 0e81c0d2-onoff onoff@
+32 silly lockFile 0e81c0d2-onoff onoff@
+33 error Error: connect EHOSTUNREACH 104.16.21.35:443
+33 error     at Object._errnoException (util.js:1022:11)
+33 error     at _exceptionWithHostPort (util.js:1044:20)
+33 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+34 error If you need help, you may report this *entire* log,
+34 error including the npm and node versions, at:
+34 error     <http://github.com/npm/npm/issues>
+35 error System Linux 4.19.66-v7+
+36 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "onoff"
+37 error cwd /home/pi
+38 error node -v v8.11.1
+39 error npm -v 1.4.21
+40 error syscall connect
+41 error code EHOSTUNREACH
+42 error errno EHOSTUNREACH
+43 verbose exit [ 1, true ]
